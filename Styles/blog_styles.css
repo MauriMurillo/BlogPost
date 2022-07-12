@@ -1,0 +1,180 @@
+:root{
+    /* Project Colors */
+    --green: #49cfad;
+    --maingrey: #434a54;
+    --dark: #23282d;
+    --lighty: #e7e9ed;
+    --darky: #656d78;
+    --purple: #ac92ec;
+    --secondarygreen: #a0d468;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* Header styles */
+header{
+    width: 100vw;
+    height: 9vh;
+    background-color: var(--green);
+}
+header nav ul{
+    height: 9vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    place-items: center;
+    margin-right: 50px;
+}
+header nav ul li a{
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+    margin-left: 15px;
+}
+header nav ul li a span{
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-decoration: none;
+}
+/* main section styles */
+main{
+    width: 100vw;
+}
+/* parte estilo header */
+main .main-links{
+    width: 100vw;
+    height: 22vh;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+main .main-links .main-logo{
+    height: 130px;
+    margin-left: 30px;
+}
+main .main-links .main-link-about{
+    display: block;
+    height: auto;
+    margin-right: 80px;
+    color: black;
+    font-size: 2.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-bottom: black 2px solid;
+}
+/* styles main post */
+main .main-post{
+    width: 80%;
+    height: 170vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+main .main-post .image-container{
+    width: 100%;
+    height: 475px;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+main .main-post .image-container img{
+    width: 100%;
+    margin-top: -140px;
+}
+
+main .main-post .post-article{
+    width: 75%;
+}
+main .main-post .post-article h3{
+    font-size: 2.8rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+main .main-post .post-article .divisor{
+    width: 100%;
+    height: 1px;
+    background-color: var(--lighty);
+    border: solid 1px #edf1f2;
+    margin: 10px 0px;
+}
+main .main-post .post-article h2{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 5.8rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+main .main-post .post-article p{
+    margin: 20px 0px;
+    text-align: justify;
+    font-size: 2.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/* styles contact section */
+main .main-contact{
+    width: 100vw;
+    height: 35vh;
+    background-color: var(--lighty);
+    display: grid;
+    grid-template-columns: repeat(2, 35vw);
+    place-content: center;
+    justify-content: center;
+    gap: 100px;
+}
+main .main-contact .main-contact-item{
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .main-contact .main-contact-item img{
+    height: 100%;
+}
+main .main-contact .main-contact-item h3{
+    font-weight: 100;
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-bottom: black solid 2px;
+    width: fit-content;
+}
+main .main-contact .main-contact-item p{
+    width: calc(35vw - 200px);
+    font-weight: 100;
+    font-size: 1.8rem;
+    padding-left: 20px;
+    margin: 15px 0px;
+}
+.greeeen{
+    width: 100vw;
+    height: 5vh;
+    background-color: var(--green);
+}
+/* footer styles */
+footer{
+    width: 100vw;
+    height: 9vh;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 2px;
+}
