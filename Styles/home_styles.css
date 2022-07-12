@@ -1,0 +1,110 @@
+:root{
+    /* Project Colors */
+    --green: #49cfad;
+    --maingrey: #434a54;
+    --dark: #23282d;
+    --lighty: #ccd1d9;
+    --darky: #656d78;
+    --purple: #ac92ec;
+    --secondarygreen: #a0d468;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body{
+    background-image: url("../Assets/Images/cover-large.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Header styles */
+header{
+    width: 100vw;
+    height: 9vh;
+    background-color: var(--green);
+}
+header nav ul{
+    height: 9vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    place-items: center;
+    margin-right: 50px;
+}
+header nav ul li a{
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+    margin-left: 15px;
+}
+header nav ul li a span{
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-decoration: none;
+}
+/* Main Sections */
+main{
+    width: 100vw;
+    height: 92vh;
+}
+main .main-links{
+    width: 100%;
+    height: 24%;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+main .main-links .main-logo{
+    height: 130px;
+    margin-left: 30px;
+}
+main .main-links .main-link-about{
+    display: block;
+    height: auto;
+    margin-right: 80px;
+    color: white;
+    font-size: 2.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-bottom: white 2px solid;
+}
+main .main-content{
+    width: 55%;
+    height: 50%;
+    margin: 140px auto;
+}
+main .main-content h1{
+    font-size: 6rem;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+main .main-content .main-link-blogs{
+    display: block;
+    background-color: var(--green);
+    width: 200px;
+    height: 75px;
+    margin: 0px auto;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--dark);
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+}
